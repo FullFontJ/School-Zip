@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+
+:root{
+    --color-Brown: rgb(168, 84, 50);
+    --color-Light-Brown: rgb(251, 192, 100);
+    --color-Strong-Brown: rgb(73, 30, 15);
+    --color-black: rgb(8, 1, 1);
+    --color-font:rgb(255, 255, 255);
+    --color-button: #7239dd;
+    --description-goals: #968f94;
+    --color-background-button: #bc5c36;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.background-Brown{
+    background-color: var(--color-Brown);
+}
+
+.background-Light-Brown{
+    background-color: var(--color-Light-Brown);
+}
+
+.background-Strong-Brown{
+    background-color: var(--color-Strong-Brown);
+}
+
+.background-image-Brown{
+    background-image: linear-gradient(var(--color-Strong-Brown), var(--color-Light-Brown));
+}
+
+.background-black{
+    background-color: var(--color-black);
+}
+
+
+
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titlepage{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.OpcionNav{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.OpcionNav li > a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.OpcionNav li:first-child > a{
+    color: var(--color-font);
+}
+
+.OpcionNav li:last-child > a{
+    color: var(--color-black);
+    background-color: var(--color-font);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-section{
+    width: 330px;
+    height: 164px;
+    margin-top: 80px;
+}
+
+.fontTitleSection{
+    width: 520px;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--color-font);
+}
+
+.fontDescripSection{
+    width: 540px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--color-font);
+}
+
+.Presentation{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Presentation > h1{
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Presentation > p{
+    width: 680px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.Presentation > span{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.GetCoupon {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.GetCoupon > input{
+    border: none;
+    padding: 22px 50px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.GetCoupon > button{
+    border: none;
+    padding: 22px 50px;
+    border-radius: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: var(--color-button);
+    color: var(--color-font);
+}
+
+.imgPresentation{
+    width: 640;
+    height: 420;
+    position: relative;
+    z-index: 10;
+}
+
+.imgAnimal{
+    width: 640;
+    height: 420;
+    margin: 40px 0;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.imgTeacher{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    top: 80px;
+    left: 65px;
+    z-index: 12;
+}
+
+.imgDoobleOne{
+    position: absolute;
+    top: -10px;
+    left: -160px;
+    z-index: 12;
+}
+
+.imgDoobleTwo{
+    position: absolute;
+    bottom: 10px;
+    right: -210px;
+    z-index: 12;
+}
+
+.backgroundPresentation{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.backgroundImg{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.sectionCardsGoals{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.CardsGoals{
+    padding: 50px 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.Card{
+    color: var(--color-Light-Brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Card > img{
+    width: 120px;
+    height: 140px;
+}
+
+.Card > p{
+    font-size: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Card > span{
+    font-size: 20px;
+    color: var(--description-goals);
+}
+
+.opcionClasses{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.opcionClasses > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    border: 1px solid var(--color-Light-Brown);
+    border-radius: 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--color-font);
+    background-color: var(--color-background-button);
+}
+
+.gridClasses{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin: 40px 0;
+    margin-bottom: 100px;
+}
+
+.cardClass{
+    width: 100%;
+    height: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--color-font);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.typeClass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 25px;
+    text-transform: capitalize;
+    padding: 2px 5px;
+    border: 1px solid var(--color-Light-Brown);
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.cardClass > img{
+    width: 100%;
+    height: 185px;
+    border-radius: 10px;
+}
+
+.cardClass > h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.cardClass > p{
+    font-size: 14px;
+    color: var(--description-goals);
+    margin-bottom: 0;
+}
+
+.gridTeachears{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 30px 0;
+    margin-bottom: 0;
+    z-index: 10;
+}
+
+.CardTeachears{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.ImgTeachears{
+    width: 100%;
+    height: 500px;
+}
+
+.ImgTeachears > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.CommetTeachears{
+    width: 85%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--color-font);
+}
+
+.CommetTeachears > h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.CommetTeachears > p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: var(--description-goals);
+}
+
+
+.Questions{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.Questions > hr{
+    width: 100%;
+    border: 1px solid var(--description-goals);
+}
+
+.CardQuestion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CardQuestion > p{
+    font-size: 22px;
+    color: var(--color-font);
+    font-weight: 600
+}
+
+.CardQuestion > img{
+    width: 30px;
+    height: 30px;
+}
+
+.SectionCoupon{
+    width: 100%;
+    padding-top: 90px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SectionCoupon > p{
+    width: 480px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    color: var(--color-font);
+    flex-direction: column;
+}
+
+footer > h2{
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.enlaceFooter{
+    display: flex;
+    margin-left: 50px;
+    gap: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
